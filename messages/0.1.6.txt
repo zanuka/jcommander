@@ -1,0 +1,6 @@
+JCommander v0.1.6 Changelog:
+
+Please be sure to restart Sublime Text to start using this new version.
+
+- NEW: JS triggers and completions
+- NEW: Dust triggers and completions

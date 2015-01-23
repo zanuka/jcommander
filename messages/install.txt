@@ -1,0 +1,6 @@
+You have successfully installed
+
+JCommander
+
+v0.1.7
+

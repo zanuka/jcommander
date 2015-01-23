@@ -1,0 +1,41 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "jevt|J:events",
+            "contents": "events: {\n\t'${1:eventName1}':'${2:eventHandler1}',\n\t'${3:eventName2}':'${4:eventHandler2}'\n},"
+        },
+        {
+            "trigger": "jpub|J:published-properties",
+            "contents": "published: {\n\t'${1:name1}':'${2:value1}',\n\t'${3:name2}':'${4:value2}'\n},"
+        },
+        {
+            "trigger": "jcre|J:create-function",
+            "contents": "create: function(){\n\t${1}\n},"
+        },
+        {
+            "trigger": "jpre|J:preRender-function",
+            "contents": "preRender: function(){\n\t${1}\n},"
+        },
+        {
+            "trigger": "jpost|J:postRender-function",
+            "contents": "postRender: function(){\n\t${1}\n},"
+        },
+        {
+            "trigger": "jpostre|J:postReRender-function",
+            "contents": "postReRender: function(){\n\t${1}\n},"
+        },
+        {
+            "trigger": "jset|J:set",
+            "contents": "this.set('${1:stringKey}', ${2:anythingValue});"
+        },
+        {
+            "trigger": "jget|J:get",
+            "contents": "this.get('${1:stringKey}');"
+        },
+        {
+            "trigger": "jbubb|J:bubble",
+            "contents": "this.bubble('${1:event name}', ${2:data});"
+        }
+    ]
+}

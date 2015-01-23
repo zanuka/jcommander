@@ -1,0 +1,47 @@
+<snippet>
+<content>
+<![CDATA[
+require('${1:component-dependencies}');
+
+module.exports = juno.ViewComponent('${2:path/to/component}/${3:ComponentName}', {
+
+  events: {
+    '${4:eventName1}':'${5:eventHandler1}',
+    '${6:eventName2}':'${7:eventHandler2}'
+  },
+
+  published: {
+    '${8:name1}':'${9:value1}',
+    '${10:name2}':'${11:value2}'
+  },
+
+  create: function(){
+    ${12}
+  },
+
+  preRender: function(){
+    ${13}
+  },
+
+  postRender: function(){
+    ${14}
+  },
+
+  postReRender: function(){
+    ${15}
+  },
+
+  ${5:eventHandler1}: function(){
+    ${16}
+  },
+
+  ${7:eventHandler2}: function(){
+    ${17}
+  }
+
+});]]>
+</content>
+<tabTrigger><![CDATA[jviewcomponent]]></tabTrigger>
+<scope>source.js</scope>
+<description>Juno|ViewComponent</description>
+</snippet>

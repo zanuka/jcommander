@@ -1,0 +1,44 @@
+{! jc !}
+{@junoComponent component="path/to/your/component" name="componentName" /}
+
+{! jdc !}
+{@junoDeferredComponent level="level" component="path/to/your/component" name="componentName" /}
+
+{! jp !}
+{@junoPartial name="partialName" context=someContext /}
+
+{! jmob !}
+{^isMobile}
+
+{:else}
+
+{/isMobile}
+
+{! jab !}
+{@ab a="percent/100" b="percent/100"}
+
+{:b}
+
+{/ab}
+
+{! jabc !}
+{@ab a="percent/100" b="percent/100" c="percent/100"}
+
+{:b}
+
+{:c}
+
+{/ab}
+
+{! jabcd !}
+{@ab a="percent/100" b="percent/100" c="percent/100" d="percent/100"}
+
+{:b}
+
+{:c}
+
+{:d}
+
+{/ab}
+
+{! .. and so on !}
