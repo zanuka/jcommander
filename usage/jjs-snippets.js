@@ -2,7 +2,8 @@
 
 require('component-dependencies');
 
-module.exports = juno.ViewComponent('path/to/component/ComponentName', {
+module.exports = juno.ViewComponent.extend({
+  name: 'path/to/component/ComponentName',
 
   events: {
     'eventName1':'eventHandler1',
@@ -39,4 +40,3 @@ module.exports = juno.ViewComponent('path/to/component/ComponentName', {
   }
 
 });
-

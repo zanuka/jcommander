@@ -2,16 +2,12 @@
     "scope": "text.html.dust",
     "completions": [
         {
-            "trigger": "jc|J:Component",
-            "contents": "{@junoComponent component=\"${1:path/to/your/component}\" name=\"${2:componentName}\" /}"
+            "trigger": "jc|J:ViewComponent",
+            "contents": "{@ViewComponent component=\"${1:path/to/your/component}\" name=\"${2:componentName}\" /}"
         },
         {
-            "trigger": "jdc|J:DefferedComponent",
-            "contents": "{@junoDeferredComponent level=\"${1:level}\" component=\"${2:path/to/your/component}\" name=\"${3:componentName}\" /}"
-        },
-        {
-            "trigger": "jp|J:Partial",
-            "contents": "{@junoPartial name=\"${1:partialName}\" context=${2:someContext} /}"
+            "trigger": "jdc|J:DeferredViewComponent",
+            "contents": "{@DeferredViewComponent level=\"${1:level}\" component=\"${2:path/to/your/component}\" name=\"${3:componentName}\" /}"
         },
         {
             "trigger": "jab|J:ab-Test",

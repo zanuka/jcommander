@@ -1,7 +1,7 @@
 ## JCommander
-##### v0.1.7
+##### v0.1.8
 
-JCommander is a Sublime Text package focused on js helpers, dust helpers, modules and templates.
+JCommander is a Sublime Text package focused on js helpers, dust helpers, modules and other handy completions.
 
 ### Requirements
 
