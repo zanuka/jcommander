@@ -2,10 +2,7 @@
 {@junoComponent component="path/to/your/component" name="componentName" /}
 
 {! jdc !}
-{@junoDeferredComponent level="level" component="path/to/your/component" name="componentName" /}
-
-{! jp !}
-{@junoPartial name="partialName" context=someContext /}
+{@DeferredViewComponent level="level" component="path/to/your/component" name="componentName" /}
 
 {! jmob !}
 {^isMobile}

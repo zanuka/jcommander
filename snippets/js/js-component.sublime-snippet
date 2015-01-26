@@ -3,7 +3,8 @@
 <![CDATA[
 require('${1:component-dependencies}');
 
-module.exports = juno.ViewComponent('${2:path/to/component}/${3:ComponentName}', {
+module.exports = juno.ViewComponent.extend({
+  name: '${2:path/to/component}/${3:ComponentName}',
 
   events: {
     '${4:eventName1}':'${5:eventHandler1}',

@@ -1,7 +1,0 @@
-JCommander v0.1.7 Changelog:
-
-Please be sure to restart Sublime Text to start using this new version.
-
-- NEW: view component completion
-
-
