@@ -1,20 +1,19 @@
 <snippet>
 <content>
 <![CDATA[
-import chai from 'chai';
+import {expect} from 'chai';
 import JunoTest from 'global/JunoTest';
 import ${1:ComponentName} from '${2:path/to/component}/${3:ComponentName}';
-let expect = chai.expect;
 
 
-describe('${4:ComponentName} Tests', () => {
+describe('${4:ComponentName} ${5:Type} Tests', () => {
 	let data;
 	beforeEach( () => {
 		data = {};
 	});
 
-	it('Should <expected behavior> when <expected precondition>', (done) => {
-		JunoTest.loadComponent(${5:ComponentName},data).then( () => {
+	it('should <expected behavior> when <expected precondition>', (done) => {
+		JunoTest.loadComponent(${6:ComponentName},data).then( () => {
 	  
 		}).finish(done);
 	});
