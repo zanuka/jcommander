@@ -1,0 +1,14 @@
+{
+	"scope": "source.js",
+	"completions": [
+		{
+			"trigger" : "jdesc|J:describe",
+			"contents" : "describe('${1:ComponentName} Tests', () => {\n\n});"
+		},
+		{
+			"trigger" : "jit|J:it",
+			"contents" : "it('Should <expected behavior> when <expected precondition>', (done) => {\n\tJunoTest.loadComponent(${1:ComponentName}).then( () => {\n\n\t}).finish(done);\n});"
+
+		}
+	]	
+}
