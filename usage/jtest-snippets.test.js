@@ -1,20 +1,19 @@
-import chai from 'chai';
+// trigger > jtestcomponent
+import {expect} from 'chai';
 import JunoTest from 'global/JunoTest';
 import ComponentName from 'path/to/component/ComponentName';
-let expect = chai.expect;
 
 
-describe('ComponentName Tests', () => {
+describe('ComponentName Type', () => {
   let data;
   beforeEach( () => {
     data = {};
   });
 
-  it('Should <expected behavior> when <expected precondition>', (done) => {
+  it('should <expected behavior> when <expected precondition>', (done) => {
     JunoTest.loadComponent(ComponentName,data).then( () => {
     
     }).finish(done);
   });
 });
-
 

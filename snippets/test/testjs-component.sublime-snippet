@@ -6,7 +6,7 @@ import JunoTest from 'global/JunoTest';
 import ${1:ComponentName} from '${2:path/to/component}/${3:ComponentName}';
 
 
-describe('${4:ComponentName} ${5:Type} Tests', () => {
+describe('${4:ComponentName} ${5:Type}', () => {
 	let data;
 	beforeEach( () => {
 		data = {};
