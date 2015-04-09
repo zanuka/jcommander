@@ -3,7 +3,7 @@
 	"completions": [
 		{
 			"trigger" : "jdesc|J:describe",
-			"contents" : "describe('${1:ComponentName} Tests', () => {\n\n});"
+			"contents" : "describe('${1:ComponentName} ${2:Type}', () => {\n\n});"
 		},
 		{
 			"trigger" : "jit|J:it",
