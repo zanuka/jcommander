@@ -7,11 +7,14 @@
         },
         {
             "trigger": "jpub|J:published-properties",
-            "contents": "published: {\n\t'${1:name1}':'${2:value1}',\n\t'${3:name2}':'${4:value2}'\n},"
+            "contents": "published: {
+              \n\t'${1:value1}':'${2:value1}',\n\t'${3:name2}':'${4:value2}'\n},"
         },
         {
             "trigger": "jcre|J:create-function",
-            "contents": "create: function(){\n\t${1}\n},"
+            "contents": "create: function(){
+              \n\t
+              ${1}\n},"
         },
         {
             "trigger": "jpre|J:preRender-function",
