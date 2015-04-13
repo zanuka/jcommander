@@ -2,35 +2,35 @@
     "scope": "text.html.dust",
     "completions": [
         {
-            "trigger": "jc|J:ViewComponent",
+            "trigger": "jvc|juno:ViewComponent",
             "contents": "{@ViewComponent component=\"${1:path/to/your/component}\" name=\"${2:componentName}\" /}"
         },
         {
-            "trigger": "jdc|J:DeferredViewComponent",
+            "trigger": "jdc|juno:DeferredViewComponent",
             "contents": "{@DeferredViewComponent level=\"${1:level}\" component=\"${2:path/to/your/component}\" name=\"${3:componentName}\" /}"
         },
         {
-            "trigger": "jab|J:ab-Test",
+            "trigger": "jab|juno:ab-Test",
             "contents": "{@ab a=\"${1:percent/100}\" b=\"${2:percent/100}\"}\n\t${3}\n{:b}\n\t${4}\n{/ab}"
         },
         {
-            "trigger": "jabc|J:abc-Test",
+            "trigger": "jabc|juno:abc-Test",
             "contents": "{@ab a=\"${1:percent/100}\" b=\"${2:percent/100}\" c=\"${3:percent/100}\"}\n\t${4}\n{:b}\n\t${5}\n{:c}\n\t${6}\n{/ab}"
         },
         {
-            "trigger": "jabcd|J:abcd-Test",
+            "trigger": "jabcd|juno:abcd-Test",
             "contents": "{@ab a=\"${1:percent/100}\" b=\"${2:percent/100}\" c=\"${3:percent/100}\" d=\"${4:percent/100}\"}\n\t${5}\n{:b}\n\t${6}\n{:c}\n\t${7}\n{:d}\n\t${8}\n{/ab}"
         },
         {
-            "trigger": "jabcde|J:abcde-Test",
+            "trigger": "jabcde|juno:abcde-Test",
             "contents": "{@ab a=\"${1:percent/100}\" b=\"${2:percent/100}\" c=\"${3:percent/100}\" d=\"${4:percent/100}\" e=\"${5:percent/100}\"}\n\t${6}\n{:b}\n\t${7}\n{:c}\n\t${8}\n{:d}\n\t${9}\n{:e}\n\t${11}\n{/ab}"
         },
         {
-            "trigger": "jabcdef|J:abcdef-Test",
+            "trigger": "jabcdef|juno:abcdef-Test",
             "contents": "{@ab a=\"${1:percent/100}\" b=\"${2:percent/100}\" c=\"${3:percent/100}\" d=\"${4:percent/100}\" e=\"${5:percent/100}\" f=\"${6:percent/100}\"}\n\t${7}\n{:b}\n\t${8}\n{:c}\n\t${9}\n{:d}\n\t${10}\n{:e}\n\t${12}\n{:f}\n\t${13}\n{/ab}"
         },
         {
-            "trigger": "jabcdefg|J:abcdefg-Test",
+            "trigger": "jabcdefg|juno:abcdefg-Test",
             "contents": "{@ab a=\"${1:percent/100}\" b=\"${2:percent/100}\" c=\"${3:percent/100}\" d=\"${4:percent/100}\" e=\"${5:percent/100}\" f=\"${6:percent/100}\" g=\"${7:percent/100}\"}\n\t${7}\n{:b}\n\t${8}\n{:c}\n\t${9}\n{:d}\n\t${10}\n{:e}\n\t${12}\n{:f}\n\t${13}\n{:g}\n\t${14}\n{/ab}"
         }
     ]

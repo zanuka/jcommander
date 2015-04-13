@@ -1,7 +1,8 @@
 ## JCommander
-##### v0.1.8
+##### v0.1.9
+by Mike Delucchi - [zanuka](https://github.com/zanuka)
 
-JCommander is a Sublime Text package focused on js helpers, dust helpers, modules and other handy completions.
+JCommander is a Sublime Text package tailor-made for max productivity in J framework.
 
 ### Requirements
 
