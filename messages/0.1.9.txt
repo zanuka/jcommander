@@ -12,5 +12,8 @@ JCommander 0.1.9 Changelog:
 - NEW: 'japi' completion - api component - simplified
 - UPDATE: all js completions are now in es6
 - UPDATE: refactored completions for core version 0.7.0
+- UPDATE: this.render(); added to create completion
+- UPDATE: 'jvc' js completion - reduced to minimal code
+- UPDATE: 'jvc' js completion - require removed
 
 [@zanuka](https://github.com/zanuka)

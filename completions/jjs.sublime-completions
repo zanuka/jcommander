@@ -19,7 +19,7 @@
         },
         {
             "trigger": "jcre|juno:create-function",
-            "contents": "create(req){\n\t${1}\n},"
+            "contents": "create(req){\n\t${1}\n\tthis.render();\n},"
         },
         {
             "trigger": "jpre|juno:preRender-function",
