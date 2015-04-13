@@ -1,8 +1,7 @@
-// trigger > jtestcomponent
+// jtest
 import {expect} from 'chai';
 import JunoTest from 'global/JunoTest';
 import ComponentName from 'path/to/component/ComponentName';
-
 
 describe('ComponentName Type', () => {
   let data;
@@ -12,8 +11,7 @@ describe('ComponentName Type', () => {
 
   it('should <expected behavior> when <expected precondition>', (done) => {
     JunoTest.loadComponent(ComponentName,data).then( () => {
-    
+
     }).finish(done);
   });
 });
-

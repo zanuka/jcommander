@@ -1,0 +1,16 @@
+JCommander 0.1.9 Changelog:
+
+- NEW: 'jdesc' test completion added - describe
+- NEW: 'jit' test completion added - it(should)
+- NEW: 'jtest' snippet added - test template
+- NEW: 'jpreup' completion - preUpdate()
+- NEW: 'jpostup' completion - postUpdate()
+- NEW: 'jwaterfall' completion - this.waterfall('event name', data)
+- NEW: 'jtrigger' completion - juno.trigger('event name', data)
+- NEW: 'jnav' completion - juno.router.navigate('/route/path');
+- NEW: 'jvc' completion - view component - simplified
+- NEW: 'japi' completion - api component - simplified
+- UPDATE: all js completions are now in es6
+- UPDATE: refactored completions for core version 0.7.0
+
+[@zanuka](https://github.com/zanuka)

@@ -2,43 +2,64 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "jevt|J:events",
+            "trigger": "jvc|juno:view-component",
+            "contents": "export default juno.ViewComponent.extend({\n\tis: '${1:path/to/component}/${2:ComponentName}',\n\n\t${3}\n\n});"
+        },
+        {
+            "trigger": "japi|juno:api-component",
+            "contents": "export default juno.APIComponent.extend({\n\n\tis: '${1:path/to/component}/${2:ComponentName}',\n\n\tbase: '${3:http://your.base.url}',\n\n\tserverCache: ${4:true},\n\n});"
+        },
+        {
+            "trigger": "jevt|juno:events",
             "contents": "events: {\n\t'${1:eventName1}':'${2:eventHandler1}',\n\t'${3:eventName2}':'${4:eventHandler2}'\n},"
         },
         {
-            "trigger": "jpub|J:published-properties",
-            "contents": "published: {
-              \n\t'${1:value1}':'${2:value1}',\n\t'${3:name2}':'${4:value2}'\n},"
+            "trigger": "jpub|juno:published-properties",
+            "contents": "published: {\n\t'${1:value1}':'${2:value1}',\n\t'${3:name2}':'${4:value2}'\n},"
         },
         {
-            "trigger": "jcre|J:create-function",
-            "contents": "create: function(){
-              \n\t
-              ${1}\n},"
+            "trigger": "jcre|juno:create-function",
+            "contents": "create(req){\n\t${1}\n},"
         },
         {
-            "trigger": "jpre|J:preRender-function",
-            "contents": "preRender: function(){\n\t${1}\n},"
+            "trigger": "jpre|juno:preRender-function",
+            "contents": "preRender(){\n\t${1}\n},"
         },
         {
-            "trigger": "jpost|J:postRender-function",
-            "contents": "postRender: function(){\n\t${1}\n},"
+            "trigger": "jpost|juno:postRender-function",
+            "contents": "postRender(){\n\t${1}\n},"
         },
         {
-            "trigger": "jpostre|J:postReRender-function",
-            "contents": "postReRender: function(){\n\t${1}\n},"
+            "trigger": "jpreup|juno:preUpdate-function",
+            "contents": "preUpdate(){\n\t${1}\n},"
         },
         {
-            "trigger": "jset|J:set",
+            "trigger": "jpostup|juno:postUpdate-function",
+            "contents": "postUpdate(){\n\t${1}\n},"
+        },
+        {
+            "trigger": "jset|juno:set",
             "contents": "this.set('${1:stringKey}', ${2:anythingValue});"
         },
         {
-            "trigger": "jget|J:get",
+            "trigger": "jget|juno:get",
             "contents": "this.get('${1:stringKey}');"
         },
         {
-            "trigger": "jbubb|J:bubble",
+            "trigger": "jbubb|juno:bubble",
             "contents": "this.bubble('${1:event name}', ${2:data});"
+        },
+        {
+            "trigger": "jwaterfall|juno:waterfall",
+            "contents": "this.waterfall('${1:event name}', ${2:data});"
+        },
+        {
+            "trigger": "jtrigger|juno:waterfall",
+            "contents": "juno.trigger('${1:event name}', ${2:data});"
+        },
+        {
+            "trigger": "jnav|juno:router-navigate",
+            "contents": "juno.router.navigate('${1:/route/path}');"
         }
     ]
 }

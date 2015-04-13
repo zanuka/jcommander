@@ -1,5 +1,5 @@
-{! jc !}
-{@junoComponent component="path/to/your/component" name="componentName" /}
+{! jvc !}
+{@ViewComponent component="path/to/your/component" name="componentName" /}
 
 {! jdc !}
 {@DeferredViewComponent level="level" component="path/to/your/component" name="componentName" /}
