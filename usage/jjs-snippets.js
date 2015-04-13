@@ -30,27 +30,28 @@ published: {
 },
 
 // jcreate
-create(req){
+create(req) {
 
+  this.render();
 },
 
 // jpre
-preRender(){
+preRender() {
 
 },
 
 // jpost
-postRender(){
+postRender() {
 
 },
 
 // jpreup
-preUpdate(){
+preRender() {
 
 },
 
 // jpostup
-postUpdate(){
+postRender() {
 
 },
 
