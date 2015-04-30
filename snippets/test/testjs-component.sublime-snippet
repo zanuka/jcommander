@@ -11,10 +11,10 @@ describe('${4:ComponentName} ${5:Type}', () => {
     data = {};
   });
 
-  it('should <expected behavior> when <expected precondition>', (done) => {
+  it('should <expected behavior> when <expected precondition>', () => {
     JunoTest.loadComponent(${6:ComponentName},data).then( () => {
 
-    }).finish(done);
+    });
   });
 });
 
