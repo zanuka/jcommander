@@ -1,0 +1,5 @@
+JCommander 0.1.10 Changelog:
+
+- UPDATE: update jit|juno:test:it to return a promise to MochaJS
+
+[@zanuka](https://github.com/zanuka)
