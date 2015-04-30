@@ -1,0 +1,5 @@
+JCommander 0.1.11 Changelog:
+
+- UPDATE: jit|juno:test:it adding return - removed timeout test
+
+[@zanuka](https://github.com/zanuka)
