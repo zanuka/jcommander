@@ -7,7 +7,7 @@
     },
     {
       "trigger" : "jit|juno:test:it",
-      "contents" : "it('Should <expected behavior> when <expected precondition>', (done) => {\n\tJunoTest.loadComponent(${1:ComponentName}).then( () => {\n\t${2}\n\t}).finish(done);\n});"
+      "contents" : "it('Should <expected behavior> when <expected precondition>', () => {\n\tJunoTest.loadComponent(${1:ComponentName}).then( () => {\n\t${2}\n\t});\n});"
 
     }
   ]
