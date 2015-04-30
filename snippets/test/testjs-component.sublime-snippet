@@ -7,12 +7,12 @@ import ${1:ComponentName} from '${2:path/to/component}/${3:ComponentName}';
 
 describe('${4:ComponentName} ${5:Type}', () => {
   let data;
-  beforeEach( () => {
+  beforeEach(() => {
     data = {};
   });
 
   it('should <expected behavior> when <expected precondition>', () => {
-    JunoTest.loadComponent(${6:ComponentName},data).then( () => {
+    return JunoTest.loadComponent(${6:ComponentName},data).then(() => {
 
     });
   });
