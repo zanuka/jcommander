@@ -1,19 +1,21 @@
 // jvc
 export default juno.ViewComponent.extend({
+
   is: 'path/to/component/ComponentName',
 
 
 
 });
 
-// japi
-export default juno.APIComponent.extend({
+// jserv
+export default juno.Service.extend({
 
-  is: 'path/to/component/ComponentName',
+  is: 'services/feed/Feed',
 
-  base: 'http://your.base.url',
+  base: 'https://your/base/url/path/',
 
-  serverCache: true,
+  cache: 'client|server|all',
+
 
 });
 
@@ -23,14 +25,15 @@ events: {
   'eventName2':'eventHandler2'
 },
 
-// jpub
-published: {
-  'value1':'value1',
-  'name2':'value2'
+// jdef
+defaults() {
+  return {
+    key: 'value',
+    key: 'value'
 },
 
-// jcreate
-create(req) {
+// jcre
+create() {
 
   this.render();
 },
@@ -46,20 +49,17 @@ postRender() {
 },
 
 // jpreup
-preRender() {
+preUpdate() {
 
 },
 
 // jpostup
-postRender() {
+postUpdate() {
 
 },
 
 // jset
 this.set('stringKey', anythingValue);
-
-// jget
-this.get('stringKey');
 
 // jbubb
 this.bubble('event name', data);
@@ -67,8 +67,8 @@ this.bubble('event name', data);
 // jwaterfall
 this.waterfall('event name', data);
 
-// jtrigger
-juno.trigger('event name', data);
+// jemit
+juno.events.emit('event name', data);
 
 // jnav
 juno.router.navigate('/route/path');
