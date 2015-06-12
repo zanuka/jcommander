@@ -1,41 +1,5 @@
 {! jvc !}
-{@ViewComponent component="path/to/your/component" name="componentName" /}
+{@ViewComponent is="path/to/your/component" /}
 
 {! jdc !}
-{@DeferredViewComponent level="level" component="path/to/your/component" name="componentName" /}
-
-{! jmob !}
-{^isMobile}
-
-{:else}
-
-{/isMobile}
-
-{! jab !}
-{@ab a="percent/100" b="percent/100"}
-
-{:b}
-
-{/ab}
-
-{! jabc !}
-{@ab a="percent/100" b="percent/100" c="percent/100"}
-
-{:b}
-
-{:c}
-
-{/ab}
-
-{! jabcd !}
-{@ab a="percent/100" b="percent/100" c="percent/100" d="percent/100"}
-
-{:b}
-
-{:c}
-
-{:d}
-
-{/ab}
-
-{! .. and so on !}
+{@DeferredViewComponent level="level" is="path/to/your/component" /}

@@ -3,23 +3,23 @@
     "completions": [
         {
             "trigger": "jvc|juno:view-component",
-            "contents": "export default juno.ViewComponent.extend({\n\tis: '${1:path/to/component}/${2:ComponentName}',\n\n\t${3}\n\n});"
+            "contents": "export default juno.ViewComponent.extend({\n\n\tis: 'path/to/component/ComponentName',\n\n\t${1}\n\n});"
         },
         {
-            "trigger": "japi|juno:api-component",
-            "contents": "export default juno.APIComponent.extend({\n\n\tis: '${1:path/to/component}/${2:ComponentName}',\n\n\tbase: '${3:http://your.base.url}',\n\n\tserverCache: ${4:true},\n\n});"
+            "trigger": "jserv|juno:service",
+            "contents": "export default juno.Service.extend({\n\n\tis: 'services/feed/Feed',\n\n\tbase: 'https://your/base/url/path/',\n\n\tcache: 'client|server|all',\n\n\t${1}\n\n});"
         },
         {
             "trigger": "jevt|juno:events",
             "contents": "events: {\n\t'${1:eventName1}':'${2:eventHandler1}',\n\t'${3:eventName2}':'${4:eventHandler2}'\n},"
         },
         {
-            "trigger": "jpub|juno:published-properties",
-            "contents": "published: {\n\t'${1:value1}':'${2:value1}',\n\t'${3:name2}':'${4:value2}'\n},"
+            "trigger": "jdef|juno:defaults",
+            "contents": "defaults() {\n\treturn {\n\t\tkey: 'value',\n\t\tkey: 'value'\n},"
         },
         {
             "trigger": "jcre|juno:create-function",
-            "contents": "create(req) {\n\t${1}\n\tthis.render();\n},"
+            "contents": "create() {\n\t${1}\n\tthis.render();\n},"
         },
         {
             "trigger": "jpre|juno:preRender-function",
@@ -42,10 +42,6 @@
             "contents": "this.set('${1:stringKey}', ${2:anythingValue});"
         },
         {
-            "trigger": "jget|juno:get",
-            "contents": "this.get('${1:stringKey}');"
-        },
-        {
             "trigger": "jbubb|juno:bubble",
             "contents": "this.bubble('${1:event name}', ${2:data});"
         },
@@ -54,8 +50,8 @@
             "contents": "this.waterfall('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "jtrigger|juno:waterfall",
-            "contents": "juno.trigger('${1:event name}', ${2:data});"
+            "trigger": "jemit|juno:events:emit",
+            "contents": "juno.events.emit('${1:event name}', ${2:data});"
         },
         {
             "trigger": "jnav|juno:router-navigate",

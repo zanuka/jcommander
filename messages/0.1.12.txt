@@ -1,0 +1,6 @@
+JCommander 0.1.12 Changelog:
+
+- UPDATE: update all completions to 0.8.0
+- UPDATE: remove deprecated completions
+
+[@zanuka](https://github.com/zanuka)
