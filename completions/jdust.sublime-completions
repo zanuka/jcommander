@@ -8,14 +8,6 @@
         {
             "trigger": "jdc|juno:DeferredViewComponent",
             "contents": "{@DeferredViewComponent level=\"${1:level}\" is=\"${2:path/to/your/component}\" /}"
-        },
-        {
-            "trigger": "jab|juno:ab-Test",
-            "contents": "{@ab a=\"${1:percent/100}\" b=\"${2:percent/100}\"}\n\t${3}\n{:b}\n\t${4}\n{/ab}"
-        },
-        {
-            "trigger": "jabc|juno:abc-Test",
-            "contents": "{@ab a=\"${1:percent/100}\" b=\"${2:percent/100}\" c=\"${3:percent/100}\"}\n\t${4}\n{:b}\n\t${5}\n{:c}\n\t${6}\n{/ab}"
         }
     ]
 }
