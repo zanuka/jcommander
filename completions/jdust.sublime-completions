@@ -2,7 +2,7 @@
     "scope": "text.html.dust",
     "completions": [
         {
-            "trigger": "juno:view",
+            "trigger": "view\tJuno",
             "contents": "{@ViewComponent is=\"${1:path/to/your/component}\" /}"
         }
     ]

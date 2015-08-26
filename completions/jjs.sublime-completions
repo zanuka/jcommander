@@ -2,59 +2,59 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "juno:view",
+            "trigger": "view\tJuno",
             "contents": "export default juno.ViewComponent.extend({\n\n\tis: 'path/to/component/ComponentName',\n\n\t${1}\n\n});"
         },
         {
-            "trigger": "juno:service",
+            "trigger": "service\tJuno",
             "contents": "export default juno.Service.extend({\n\n\tis: 'services/feed/Feed',\n\n\tbase: 'https://your/base/url/path/',\n\n\tcache: 'client|server|all',\n\n\t${1}\n\n});"
         },
         {
-            "trigger": "juno:events",
+            "trigger": "events\tJuno",
             "contents": "events: {\n\t'${1:eventName1}':'${2:eventHandler1}',\n\t'${3:eventName2}':'${4:eventHandler2}'\n},"
         },
         {
-            "trigger": "juno:defaults",
+            "trigger": "defaults\tJuno",
             "contents": "defaults() {\n\treturn {\n\t\tkey: 'value',\n\t\tkey: 'value'\n},"
         },
         {
-            "trigger": "juno:create",
+            "trigger": "create\tJuno",
             "contents": "create() {\n\t${1}\n\tthis.render();\n},"
         },
         {
-            "trigger": "juno:preRender",
+            "trigger": "preRender\tJuno",
             "contents": "preRender() {\n\t${1}\n},"
         },
         {
-            "trigger": "juno:postRender",
+            "trigger": "postRender\tJuno",
             "contents": "postRender() {\n\t${1}\n},"
         },
         {
-            "trigger": "juno:preUpdate",
+            "trigger": "preUpdate\tJuno",
             "contents": "preUpdate() {\n\t${1}\n},"
         },
         {
-            "trigger": "juno:postUpdate",
+            "trigger": "postUpdate\tJuno",
             "contents": "postUpdate() {\n\t${1}\n},"
         },
         {
-            "trigger": "juno:set",
+            "trigger": "set\tJuno",
             "contents": "this.set('${1:stringKey}', ${2:anythingValue});"
         },
         {
-            "trigger": "juno:bubble",
+            "trigger": "bubble\tJuno",
             "contents": "this.bubble('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "juno:waterfall",
+            "trigger": "waterfall\tJuno",
             "contents": "this.waterfall('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "juno:emit",
+            "trigger": "emit\tJuno",
             "contents": "juno.events.emit('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "juno:navigate",
+            "trigger": "navigate\tJuno",
             "contents": "juno.router.navigate('${1:/route/path}');"
         }
     ]

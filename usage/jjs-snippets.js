@@ -1,4 +1,4 @@
-// juno:view
+// view
 
 export default juno.ViewComponent.extend({
 
@@ -6,7 +6,7 @@ export default juno.ViewComponent.extend({
 
 });
 
-// juno:service
+// service
 
 export default juno.Service.extend({
 
@@ -18,14 +18,14 @@ export default juno.Service.extend({
 
 });
 
-// juno:events
+// events
 
 events: {
   'eventName1':'eventHandler1',
   'eventName2':'eventHandler2'
 },
 
-// juno:defaults
+// defaults
 
 defaults() {
   return {
@@ -33,54 +33,54 @@ defaults() {
     key: 'value'
 },
 
-// juno:create
+// create
 
 create() {
 
   this.render();
 },
 
-// juno:preRender
+// preRender
 
 preRender() {
 
 },
 
-// juno:postRender
+// postRender
 
 postRender() {
 
 },
 
-// juno:preUpdate
+// preUpdate
 
 preUpdate() {
 
 },
 
-// juno:postUpdate
+// postUpdate
 
 postUpdate() {
 
 },
 
-// juno:set
+// set
 
 this.set('stringKey', anythingValue);
 
-// juno:bubble
+// bubble
 
 this.bubble('event name', data);
 
-// juno:waterfall
+// waterfall
 
 this.waterfall('event name', data);
 
-// juno:emit
+// emit
 
 juno.events.emit('event name', data);
 
-// juno:navigate
+// navigate
 
 juno.router.navigate('/route/path');
 

@@ -1,2 +1,2 @@
-{! juno|view !}
+{! view !}
 {@ViewComponent is="path/to/your/component" /}
