@@ -2,59 +2,59 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "jvc|juno:view-component",
+            "trigger": "juno:view",
             "contents": "export default juno.ViewComponent.extend({\n\n\tis: 'path/to/component/ComponentName',\n\n\t${1}\n\n});"
         },
         {
-            "trigger": "jserv|juno:service",
+            "trigger": "juno:service",
             "contents": "export default juno.Service.extend({\n\n\tis: 'services/feed/Feed',\n\n\tbase: 'https://your/base/url/path/',\n\n\tcache: 'client|server|all',\n\n\t${1}\n\n});"
         },
         {
-            "trigger": "jevt|juno:events",
+            "trigger": "juno:events",
             "contents": "events: {\n\t'${1:eventName1}':'${2:eventHandler1}',\n\t'${3:eventName2}':'${4:eventHandler2}'\n},"
         },
         {
-            "trigger": "jdef|juno:defaults",
+            "trigger": "juno:defaults",
             "contents": "defaults() {\n\treturn {\n\t\tkey: 'value',\n\t\tkey: 'value'\n},"
         },
         {
-            "trigger": "jcre|juno:create-function",
+            "trigger": "juno:create",
             "contents": "create() {\n\t${1}\n\tthis.render();\n},"
         },
         {
-            "trigger": "jpre|juno:preRender-function",
+            "trigger": "juno:preRender",
             "contents": "preRender() {\n\t${1}\n},"
         },
         {
-            "trigger": "jpost|juno:postRender-function",
+            "trigger": "juno:postRender",
             "contents": "postRender() {\n\t${1}\n},"
         },
         {
-            "trigger": "jpreup|juno:preUpdate-function",
+            "trigger": "juno:preUpdate",
             "contents": "preUpdate() {\n\t${1}\n},"
         },
         {
-            "trigger": "jpostup|juno:postUpdate-function",
+            "trigger": "juno:postUpdate",
             "contents": "postUpdate() {\n\t${1}\n},"
         },
         {
-            "trigger": "jset|juno:set",
+            "trigger": "juno:set",
             "contents": "this.set('${1:stringKey}', ${2:anythingValue});"
         },
         {
-            "trigger": "jbubb|juno:bubble",
+            "trigger": "juno:bubble",
             "contents": "this.bubble('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "jwaterfall|juno:waterfall",
+            "trigger": "juno:waterfall",
             "contents": "this.waterfall('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "jemit|juno:events:emit",
+            "trigger": "juno:emit",
             "contents": "juno.events.emit('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "jnav|juno:router-navigate",
+            "trigger": "juno:navigate",
             "contents": "juno.router.navigate('${1:/route/path}');"
         }
     ]
