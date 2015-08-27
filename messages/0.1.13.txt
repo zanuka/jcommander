@@ -1,11 +1,10 @@
 JCommander 0.1.13 Changelog:
 
-- UPDATE: Remove {@DeferredViewComponent /} helper #22
+- UPDATE: Remove {@DeferredViewComponent /} helper
 - UPDATE: Better tab triggers
 - UPDATE: New completion names
 - UPDATE: Removed old test completions
 - UPDATE: Removed Defferred Component completion
-- UPDATE:  
-- UPDATE:  
+- UPDATE: Service completion updated
 
 [@zanuka](https://github.com/zanuka)

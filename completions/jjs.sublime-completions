@@ -7,7 +7,7 @@
         },
         {
             "trigger": "service\tJuno",
-            "contents": "export default juno.Service.extend({\n\n\tis: '${1:path/to/service/Service}',\n\n\tbase: '${2://base/url/path}',\n\n\tcache: '${3:client|server|all}',\n\n\tgetUser(config) {\n\t\tconfig = config || {};\n\t\treturn this.fetch(this.builder('${4:service/path}', config), {\n\t\t\ttimeout: 4000\n\t\t}).then(res => res.json());\n\t}\n\n\t$5\n\n);"
+            "contents": "export default juno.Service.extend({\n\n\tis: '${1:path/to/service/Service}',\n\n\tbase: '${2://base/url/path}',\n\n\tcache: '${3:client|server|all|none}',\n\n\tgetUser(config) {\n\t\tconfig = config || {};\n\t\treturn this.fetch(this.builder('${4:service/path}', config), {\n\t\t\ttimeout: 4000\n\t\t}).then(res => res.json());\n\t}\n\n\t$5\n\n);"
         },
         {
             "trigger": "events\tJuno",
