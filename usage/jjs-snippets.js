@@ -1,75 +1,95 @@
-// jvc
+// view
+
 export default juno.ViewComponent.extend({
 
   is: 'path/to/component/ComponentName',
 
-
-
 });
 
-// jserv
+// service
+
 export default juno.Service.extend({
 
-  is: 'services/feed/Feed',
+  is: 'path/to/service/Service',
 
-  base: 'https://your/base/url/path/',
+  base: '//base/url/path',
 
   cache: 'client|server|all',
 
+  getUser(config) {
+    config = config || {};
+    return this.fetch(this.builder('service/path', config), {
+      timeout: 4000
+    }).then(res => res.json());
+  }
 
-});
+  
 
-// jevt
+);
+
+// events
+
 events: {
   'eventName1':'eventHandler1',
   'eventName2':'eventHandler2'
 },
 
-// jdef
+// defaults
+
 defaults() {
   return {
     key: 'value',
     key: 'value'
 },
 
-// jcre
+// create
+
 create() {
 
   this.render();
 },
 
-// jpre
+// preRender
+
 preRender() {
 
 },
 
-// jpost
+// postRender
+
 postRender() {
 
 },
 
-// jpreup
+// preUpdate
+
 preUpdate() {
 
 },
 
-// jpostup
+// postUpdate
+
 postUpdate() {
 
 },
 
-// jset
+// set
+
 this.set('stringKey', anythingValue);
 
-// jbubb
+// bubble
+
 this.bubble('event name', data);
 
-// jwaterfall
+// waterfall
+
 this.waterfall('event name', data);
 
-// jemit
+// emit
+
 juno.events.emit('event name', data);
 
-// jnav
+// navigate
+
 juno.router.navigate('/route/path');
 

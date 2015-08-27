@@ -2,59 +2,59 @@
     "scope": "source.js",
     "completions": [
         {
-            "trigger": "jvc|juno:view-component",
+            "trigger": "view\tJuno",
             "contents": "export default juno.ViewComponent.extend({\n\n\tis: 'path/to/component/ComponentName',\n\n\t${1}\n\n});"
         },
         {
-            "trigger": "jserv|juno:service",
-            "contents": "export default juno.Service.extend({\n\n\tis: 'services/feed/Feed',\n\n\tbase: 'https://your/base/url/path/',\n\n\tcache: 'client|server|all',\n\n\t${1}\n\n});"
+            "trigger": "service\tJuno",
+            "contents": "export default juno.Service.extend({\n\n\tis: '${1:path/to/service/Service}',\n\n\tbase: '${2://base/url/path}',\n\n\tcache: '${3:client|server|all|none}',\n\n\tgetUser(config) {\n\t\tconfig = config || {};\n\t\treturn this.fetch(this.builder('${4:service/path}', config), {\n\t\t\ttimeout: 4000\n\t\t}).then(res => res.json());\n\t}\n\n\t$5\n\n);"
         },
         {
-            "trigger": "jevt|juno:events",
+            "trigger": "events\tJuno",
             "contents": "events: {\n\t'${1:eventName1}':'${2:eventHandler1}',\n\t'${3:eventName2}':'${4:eventHandler2}'\n},"
         },
         {
-            "trigger": "jdef|juno:defaults",
+            "trigger": "defaults\tJuno",
             "contents": "defaults() {\n\treturn {\n\t\tkey: 'value',\n\t\tkey: 'value'\n},"
         },
         {
-            "trigger": "jcre|juno:create-function",
+            "trigger": "create\tJuno",
             "contents": "create() {\n\t${1}\n\tthis.render();\n},"
         },
         {
-            "trigger": "jpre|juno:preRender-function",
+            "trigger": "preRender\tJuno",
             "contents": "preRender() {\n\t${1}\n},"
         },
         {
-            "trigger": "jpost|juno:postRender-function",
+            "trigger": "postRender\tJuno",
             "contents": "postRender() {\n\t${1}\n},"
         },
         {
-            "trigger": "jpreup|juno:preUpdate-function",
+            "trigger": "preUpdate\tJuno",
             "contents": "preUpdate() {\n\t${1}\n},"
         },
         {
-            "trigger": "jpostup|juno:postUpdate-function",
+            "trigger": "postUpdate\tJuno",
             "contents": "postUpdate() {\n\t${1}\n},"
         },
         {
-            "trigger": "jset|juno:set",
+            "trigger": "set\tJuno",
             "contents": "this.set('${1:stringKey}', ${2:anythingValue});"
         },
         {
-            "trigger": "jbubb|juno:bubble",
+            "trigger": "bubble\tJuno",
             "contents": "this.bubble('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "jwaterfall|juno:waterfall",
+            "trigger": "waterfall\tJuno",
             "contents": "this.waterfall('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "jemit|juno:events:emit",
+            "trigger": "emit\tJuno",
             "contents": "juno.events.emit('${1:event name}', ${2:data});"
         },
         {
-            "trigger": "jnav|juno:router-navigate",
+            "trigger": "navigate\tJuno",
             "contents": "juno.router.navigate('${1:/route/path}');"
         }
     ]

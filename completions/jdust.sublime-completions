@@ -2,12 +2,8 @@
     "scope": "text.html.dust",
     "completions": [
         {
-            "trigger": "jvc|juno:ViewComponent",
+            "trigger": "view\tJuno",
             "contents": "{@ViewComponent is=\"${1:path/to/your/component}\" /}"
-        },
-        {
-            "trigger": "jdc|juno:DeferredViewComponent",
-            "contents": "{@DeferredViewComponent level=\"${1:level}\" is=\"${2:path/to/your/component}\" /}"
         }
     ]
 }
