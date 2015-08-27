@@ -10,13 +10,22 @@ export default juno.ViewComponent.extend({
 
 export default juno.Service.extend({
 
-  is: 'services/feed/Feed',
+  is: 'path/to/service/Service',
 
-  base: 'https://your/base/url/path/',
+  base: '//base/url/path',
 
   cache: 'client|server|all',
 
-});
+  getUser(config) {
+    config = config || {};
+    return this.fetch(this.builder('service/path', config), {
+      timeout: 4000
+    }).then(res => res.json());
+  }
+
+  
+
+);
 
 // events
 
