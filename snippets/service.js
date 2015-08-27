@@ -4,7 +4,7 @@ export default juno.Service.extend({
 
   base: '//base/url/path',
 
-  cache: 'client|server|all',
+  cache: 'client|server|all|none',
 
   getUser(config) {
     config = config || {};
