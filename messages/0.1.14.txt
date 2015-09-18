@@ -1,0 +1,5 @@
+JCommander 0.1.14 Changelog:
+
+- FIXED: Issue#26 - defaults completion
+
+[@zanuka](https://github.com/zanuka)

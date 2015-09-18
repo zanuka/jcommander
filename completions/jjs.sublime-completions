@@ -15,7 +15,7 @@
         },
         {
             "trigger": "defaults\tJuno",
-            "contents": "defaults() {\n\treturn {\n\t\tkey: 'value',\n\t\tkey: 'value'\n},"
+            "contents": "defaults() {\n\treturn {\n\t\tkey: 'value',\n\t\tkey: 'value'\n\t};\n},"
         },
         {
             "trigger": "create\tJuno",
