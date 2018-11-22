@@ -1,4 +1,4 @@
-## JCommander
+## JunoCommander
 ##### v0.1.14
 by Mike Delucchi - [zanuka](https://github.com/zanuka)
 
