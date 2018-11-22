@@ -2,7 +2,7 @@
 ##### v0.1.14
 by Mike Delucchi - [zanuka](https://github.com/zanuka)
 
-JCommander is a Sublime Text package tailor-made for max productivity
+JunoCommander is a Sublime Text package tailor-made for max productivity
 
 ### Requirements
 
